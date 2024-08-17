@@ -46,5 +46,5 @@ func (r *routerImpl) InitRouter() {
 }
 
 func (r *routerImpl) RunRouter(cf config.Config) error {
-	return r.router.Run(cf.HOST + cf.GIN_SERVER_PORT)
+	return r.router.Run(cf.GIN_SERVER_PORT)
 }
