@@ -29,7 +29,6 @@ type routerImpl struct {
 // @title Authenfication service
 // @version 1.0
 // @description server for siginIn or signUp
-// @host localhost:8081
 // @BasePath /auth
 // @schemes http
 func (r *routerImpl) InitRouter() {

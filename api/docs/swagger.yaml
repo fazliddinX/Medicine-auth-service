@@ -61,7 +61,6 @@ definitions:
       last_name:
         type: string
     type: object
-host: localhost:8081
 info:
   contact: {}
   description: server for siginIn or signUp
