@@ -4,9 +4,11 @@ import (
 	"auth-service/cmd/servers"
 	"auth-service/pkg/config"
 	"auth-service/pkg/logs"
+	"log"
 )
 
 func main() {
+	log.Println("Starting server")
 	logger := logs.InitLogger()
 
 	cfg := config.Load()
