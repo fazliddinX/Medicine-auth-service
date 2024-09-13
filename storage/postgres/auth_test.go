@@ -1,7 +1,7 @@
 package postgres
 
 import (
-	"auth-service/models"
+	"auth-service/pkg/models"
 	"github.com/google/uuid"
 	"log"
 	"testing"

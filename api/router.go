@@ -33,6 +33,10 @@ type routerImpl struct {
 // @schemes http
 func (r *routerImpl) InitRouter() {
 
+	r.router.GET("/check-health", func(c *gin.Context) {
+		c.JSON(200, gin.H{"Accept": "accept"})
+	})
+
 	r.router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	auth := r.router.Group("/auth")
